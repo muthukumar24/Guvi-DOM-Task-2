@@ -12,11 +12,16 @@ label
 
 input[type="text"],
 input[type="email"],
-input[type="gender"],
 input[type="checkbox"],
 input[type="radio"]
 {
     border: 2px solid rgb(96, 96, 96);
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+    cursor: pointer;
 }
 
 #comments
@@ -26,7 +31,7 @@ input[type="radio"]
 
 #submit
 {
-    margin: 10px 0px 15px 0px;
+    margin: 10px 0px 20px 0px !important;
     padding: 10px 20px;
 }
 
@@ -36,15 +41,37 @@ input[type="radio"]
     margin-top: 20px;
     border: 1px solid black;
     border-collapse: collapse;
+    width: 95% !important;
+    margin: auto;
 }
   
 .table th,
 .table td 
 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 8px;
+    padding: 8px 0px 8px 8px;
     border: 1px solid black;
 }
 
-  
+@media screen and (max-width:576px) {
+    .table th,
+    .table td 
+    {
+        font-size: 0.98rem;
+        font-weight: 600;
+        padding: 5px;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .table th,
+    .table td 
+    {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 5px;
+        border: 1px solid black;
+    }
+}
